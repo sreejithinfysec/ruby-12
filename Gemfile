@@ -5,6 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'capistrano', '~> 3.10.1'
+gem 'capistrano3-service'
+gem 'capistrano-bundler'
+gem 'capistrano-config'
+gem 'capistrano-npm'
+gem 'capistrano-yarn'
+
+
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
 gem 'puma', '~> 3.0'
