@@ -22,7 +22,6 @@ gem 'sass-rails', '>= 3.2'
 
 # Background jobs
 gem 'sidekiq', '~> 4.2'
-gem 'sidekiq-scheduler', '~> 2.0'
 gem 'sidekiq-failures'
 gem 'redis-namespace'
 
