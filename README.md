@@ -25,5 +25,3 @@
     * Use `./bin/yarn install --production` to install all required npm dependencies.
     * Precompile packs only when something updated in `config/webpack` or `app/javascript`.
     * Check [Webpacker](https://github.com/rails/webpacker) documentation for further information.
-
-*Version 27 March 2017 by JetRuby Agency*
