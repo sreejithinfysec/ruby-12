@@ -1,10 +1,5 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
-  "https://github.com/#{repo_name}.git"
-end
-
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
 gem 'puma', '~> 3.0'
@@ -21,12 +16,11 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 
 # Background jobs
-gem 'sidekiq', '~> 4.2'
-gem 'sidekiq-failures'
-gem 'redis-namespace'
+gem 'sidekiq'
 
 group :development, :test do
   # Console
+  gem 'pry-rails'
   gem 'rails_dt'
 end
 

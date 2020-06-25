@@ -1,9 +1,8 @@
 require 'sidekiq'
 
-redis_opts = { namespace: "sidekiq_#{Rails.application.class.to_s.deconstantize.underscore}_#{Rails.env}" }
-
-redis_opts.merge!(url: 'redis://localhost/12') if Rails.env.test?
-redis_opts.merge!(url: ENV['REDIS_URL']) if Rails.env.staging?
+redis_opts = {
+  url: ENV.fetch('REDIS_URL', 'redis://localhost/12')
+}
 
 Sidekiq.configure_server do |config|
   config.redis = redis_opts
