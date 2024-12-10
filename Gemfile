@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 7.0.0'
 gem 'pg', '~> 0.19'
 gem 'puma', '~> 3.0'
 
@@ -13,7 +13,7 @@ gem 'elasticsearch-rails'
 # Front-end stuff
 gem 'webpacker'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails', '>= 6.0.0'
 
 # Background jobs
 gem 'sidekiq'
