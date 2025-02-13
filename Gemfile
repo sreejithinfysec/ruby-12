@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 5.6'
 
 gem 'hamlit', '~> 2.8'
 gem 'simple_form'
@@ -12,7 +12,7 @@ gem 'elasticsearch-rails'
 
 # Front-end stuff
 gem 'webpacker'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sass-rails', '>= 3.2'
 
 # Background jobs
