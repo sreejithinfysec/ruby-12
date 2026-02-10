@@ -7,7 +7,7 @@ gem 'puma', '~> 3.0'
 gem 'hamlit', '~> 2.8'
 gem 'simple_form'
 
-gem 'elasticsearch-model'
+gem 'elasticsearch-model', '>= 5.0.0'
 gem 'elasticsearch-rails'
 
 # Front-end stuff
